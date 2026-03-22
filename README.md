@@ -6,13 +6,14 @@ Mirror de firmware et pack de langue FR pour le téléphone IP Mitel 6865i.
 
 | Fichier | Description |
 |---------|-------------|
+| `6865i.st` | Firmware pour le Mitel 6865i. |
 | `aastra.cfg` | Configuration pour le provisionnement : langue française, fuseau horaire Europe/Paris (heure d'été automatique), format date/heure 24h. |
 | `lang_fr.txt` | Pack de langue français pour l'interface LCD du téléphone (~1800 traductions). |
 
 ## Installation
 
 ### 1. Firmware
-Télécharger le firmware depuis le site Mitel (compte requis) ou une source fiable, puis le placer sur un serveur TFTP/HTTP.
+Le fichier `6865i.st` doit être servi via TFTP/HTTP sur un serveur accessible par le téléphone. Utiliser `aastra.cfg` pour pointer vers ce fichier.
 
 ### 2. Configuration (`aastra.cfg`)
 Inclure ce fichier dans le serveur de provisionning pour que le téléphone le télécharge automatiquement. Il configure :
